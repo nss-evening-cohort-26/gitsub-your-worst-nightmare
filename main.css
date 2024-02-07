@@ -1,3 +1,31 @@
+/* PROFILE SECTION */
+
 body {
-  background-color: beige;
+  color: #e6edf3;
+  background-color: #010409;
 }
+
+.card {
+  color: #e6edf3;
+  background-color: #0d1117;
+  border: 1px solid #e6edf3;
+  padding: 20px;
+}
+
+.card-link {
+  color: #e6edf3;
+}
+
+.btn-primary {
+  color: #e6edf3;
+  background-color: #21272c;
+  border: none;
+}
+
+.list-group-item {
+  color: #e6edf3;
+  background-color: #0d1117;
+  border: none;
+}
+
+/* PROFILE SECTION */
