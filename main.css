@@ -1,3 +1,16 @@
 body {
-  background-color: beige;
+  background-color: black;
+}
+/* This is the styling for the nav bar*/
+#overview-n {
+  color: rgb(246, 243, 243);
+}
+#repositories-n {
+  color: lightgray;
+}
+#projects-n {
+  color: lightgray;
+}
+#packages-n {
+  color: lightgray;
 }
