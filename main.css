@@ -1,14 +1,16 @@
-/* PROFILE SECTION */
-
 body {
   color: #e6edf3;
   background-color: #010409;
 }
 
+/* PROFILE SECTION */
+
 .card {
+  width: 445px;
+  height: 1468px;
   color: #e6edf3;
   background-color: #0d1117;
-  border: 1px solid #e6edf3;
+  border: none;
   padding: 20px;
 }
 
