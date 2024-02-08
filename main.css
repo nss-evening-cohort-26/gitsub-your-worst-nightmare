@@ -1,3 +1,38 @@
 body {
-  background-color: beige;
+  background-color: black;
 }
+/* footer section */
+#footerBtns {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 1%;
+  left: 10%;
+  gap: 25px;
+}
+
+.btn-primary {
+  background-color: black;
+  color: #037ffc;
+  border: none;
+  font-size: 10px;
+}
+
+#copyrightText {
+  position: absolute;
+  bottom: 0%;
+  left: 2%;
+  color: white;
+  font-size: 8px;
+  opacity: .5;
+}
+
+#github {
+  position: absolute;
+  bottom: 1.5%;
+  left: 44%;
+  color: white;
+  font-size: 15px;
+  opacity: .5;
+}
+/* ^footer section */
