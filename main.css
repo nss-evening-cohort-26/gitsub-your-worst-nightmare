@@ -35,3 +35,7 @@ body {
   font-size: 15px;
   opacity: .5;
 }
+
+#mainProject {
+  background-color: white;
+}

@@ -38,3 +38,13 @@ const footerBtnsGroup = () => {
   renderToDom("#footerBtns", domString);
 };
 footerBtnsGroup()
+
+const projectList = () => {
+  let domString = `<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>`;
+renderToDom("#mainProject", domString);
+};
+projectList()
