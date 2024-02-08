@@ -1,7 +1,7 @@
 body {
   background-color: black;
 }
-
+/* footer section */
 #footerBtns {
   display: flex;
   align-items: flex-end;
@@ -35,3 +35,4 @@ body {
   font-size: 15px;
   opacity: .5;
 }
+/* ^footer section */

@@ -20,7 +20,7 @@ const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
-
+// footer section
 const footerBtns = document.querySelector("#footerBtns");
 
 const footerBtnsGroup = () => {
@@ -38,3 +38,4 @@ const footerBtnsGroup = () => {
   renderToDom("#footerBtns", domString);
 };
 footerBtnsGroup()
+// footer section
