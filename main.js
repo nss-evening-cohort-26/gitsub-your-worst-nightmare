@@ -1,14 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
 
-// FOOTER SECTION
 const footerBtns = document.querySelector("#footerBtns");
 
 const footerBtnsGroup = () => {
-  let domString = 
-  `<a href="#" id="terms" class="btn btn-primary">Terms</a>
+  let domString = `<a href="#" id="terms" class="btn btn-primary">Terms</a>
   <a href="#" id="privacy" class="btn btn-primary">Privacy</a>
   <a href="#" id="security" class="btn btn-primary">Security</a>
   <a href="#" id="status" class="btn btn-primary">Status</a>
@@ -21,5 +37,4 @@ const footerBtnsGroup = () => {
   <a href="#" id="about" class="btn btn-primary">About</a>`;
   renderToDom("#footerBtns", domString);
 };
-footerBtnsGroup();
-// FOOTER SECTION
+footerBtnsGroup()
