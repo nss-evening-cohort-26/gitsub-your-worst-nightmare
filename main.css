@@ -9,6 +9,34 @@ body {
   bottom: 1%;
   left: 10%;
   gap: 25px;
+  background-color: black;
+}
+/* This is the styling for the nav bar*/
+#overview-n {
+  color: rgb(246, 243, 243);
+  font-size: 25px;
+}
+#repositories-n {
+  color: lightgray;
+  font-size: 25px;
+}
+#projects-n {
+  color: lightgray;
+  font-size: 25px;
+}
+#packages-n {
+  color: lightgray;
+  font-size: 25px;
+}
+.nav.nav-underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1226px;
+  height: 96px;
+  top: 10px;
+  left: 663px;
+  gap: 80px;
 }
 
 .btn-primary {
