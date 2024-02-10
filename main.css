@@ -17,7 +17,7 @@ body {
   color: #e6edf3;
 }
 
-.btn-profile {
+#btn-profile {
   color: #e6edf3;
   background-color: #21272c;
   border: none;
@@ -30,7 +30,7 @@ body {
 }
 /* PROFILE SECTION */
 
-/* FOOTER SECTION */
+/* FOOTER */
 #footerBtns {
   display: flex;
   align-items: flex-end;
@@ -92,4 +92,4 @@ body {
   font-size: 15px;
   opacity: .5;
 }
-/* FOOTER SECTION */
+/* FOOTER */
