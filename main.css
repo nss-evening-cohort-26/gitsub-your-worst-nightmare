@@ -3,7 +3,6 @@ body {
   background-color: #010409;
 }
 
-/* PROFILE SECTION */
 .card {
   width: 445px;
   height: 1468px;
@@ -28,9 +27,7 @@ body {
   background-color: #0d1117;
   border: none;
 }
-/* PROFILE SECTION */
 
-/* FOOTER */
 #footerBtns {
   display: flex;
   align-items: flex-end;
@@ -40,28 +37,32 @@ body {
   gap: 25px;
   background-color: black;
 }
-/* This is the styling for the nav bar*/
+
 #overview-n {
   color: rgb(246, 243, 243);
   font-size: 25px;
 }
+
 #repositories-n {
   color: lightgray;
   font-size: 25px;
 }
+
 #projects-n {
   color: lightgray;
   font-size: 25px;
 }
+
 #packages-n {
   color: lightgray;
   font-size: 25px;
 }
+
 .nav.nav-underline {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1226px;
+  width: 1271px;
   height: 96px;
   top: 10px;
   left: 663px;
@@ -92,4 +93,32 @@ body {
   font-size: 15px;
   opacity: .5;
 }
-/* FOOTER */
+
+#wrapper {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pinned-repos {
+  border: 1px solid red;
+  width: 1251px;
+  height: 626px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav {
+  border: 1px solid red;
+}
+
+.profile-card {
+  border: 1px solid red;
+}
+
+.repo-cards {
+  height: 190px;
+  width: 600px;
+  margin: 5px;
+  border: 1px solid #e6edf3;
+}
