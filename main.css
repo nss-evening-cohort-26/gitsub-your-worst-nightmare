@@ -2,6 +2,34 @@ body {
   color: #e6edf3;
   background-color: #010409;
 }
+/* Nav bar */
+#overview-n {
+  color: rgb(246, 243, 243);
+  font-size: 25px;
+}
+#repositories-n {
+  color: lightgray;
+  font-size: 25px;
+}
+#projects-n {
+  color: lightgray;
+  font-size: 25px;
+}
+#packages-n {
+  color: lightgray;
+  font-size: 25px;
+}
+.nav.nav-underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1226px;
+  height: 96px;
+  top: 10px;
+  left: 663px;
+  gap: 80px;
+}
+/* Nav bar */
 
 /* PROFILE SECTION */
 .card {
@@ -30,6 +58,12 @@ body {
 }
 /* PROFILE SECTION */
 
+/* Repo form */
+#repoNameHelp {
+  color: #e6edf3;
+}
+/* Repo form */
+
 /* FOOTER SECTION */
 #footerBtns {
   display: flex;
@@ -39,33 +73,6 @@ body {
   left: 10%;
   gap: 25px;
   background-color: black;
-}
-/* This is the styling for the nav bar*/
-#overview-n {
-  color: rgb(246, 243, 243);
-  font-size: 25px;
-}
-#repositories-n {
-  color: lightgray;
-  font-size: 25px;
-}
-#projects-n {
-  color: lightgray;
-  font-size: 25px;
-}
-#packages-n {
-  color: lightgray;
-  font-size: 25px;
-}
-.nav.nav-underline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1226px;
-  height: 96px;
-  top: 10px;
-  left: 663px;
-  gap: 80px;
 }
 
 .btn-primary {
