@@ -29,13 +29,19 @@ body {
 }
 
 #footerBtns {
+  height: 96px;
+  width: 1714px;
   display: flex;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 1%;
-  left: 10%;
-  gap: 25px;
-  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#copyrightText, #github {
+  color: #78818a;
+}
+
+a {
+  text-decoration: none;
 }
 
 #overview-n {
@@ -69,51 +75,22 @@ body {
   gap: 80px;
 }
 
-.btn-primary {
-  background-color: black;
-  color: #037ffc;
-  border: none;
-  font-size: 10px;
-}
-
-#copyrightText {
-  position: absolute;
-  bottom: -30%;
-  left: -9%;
-  color: white;
-  font-size: 8px;
-  opacity: .5;
-}
-
-#github {
-  position: absolute;
-  bottom: 17.5%;
-  left: 44%;
-  color: white;
-  font-size: 15px;
-  opacity: .5;
-}
-
 #wrapper {
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
 }
 
 #pinned-repos {
-  border: 1px solid red;
   width: 1251px;
   height: 626px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.nav {
-  border: 1px solid red;
-}
-
-.profile-card {
-  border: 1px solid red;
 }
 
 .repo-cards {
@@ -121,4 +98,25 @@ body {
   width: 600px;
   margin: 5px;
   border: 1px solid #e6edf3;
+}
+
+.form-card {
+  height: 664px;
+  width: 1226px;
+}
+
+.form-text {
+  color: #e6edf3;
+}
+
+#repoNameInput {
+  color: #e6edf3;
+  background-color: #090d12;
+  width: 500px;
+}
+
+#repoDescriptionInput {
+  color: #e6edf3;
+  background-color: #090d12;
+  height: 350px;
 }

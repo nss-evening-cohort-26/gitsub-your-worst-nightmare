@@ -55,7 +55,7 @@ const renderToDom = (divId, htmlToRender) => {
 };
 
 const pinnedReposOnDom = (pinnedRepos) => {
-  let domstring = "";
+  let domstring = ``;
   pinnedRepos.forEach(repo => {
     domstring +=
     `<div class="card repo-cards">
@@ -73,21 +73,24 @@ const pinnedReposOnDom = (pinnedRepos) => {
 
 pinnedReposOnDom(pinnedRepos);
 
-// const rForm = () => {
-//   let domstring =
-//   `<form>
-//     <div class="mb-3">
-//       <label for="repoNameInput" class="form-label">Repository Name</label>
-//       <input type="Name" class="form-control" id="repoNameInput" aria-describedby="">
-//       <div id="repoNameHelp" class="form-text">Great repository names are short and memorable!</div>
-//     </div>
-//     <div class="mb-3">
-//       <label for="repoDiscription" class="form-label">Description (optional)</label>
-//       <input type="text" class="form-control" id="repoDiscription">
-//     </div>
-//     <button type="button" class="btn btn-success">Create repository</button>
-//   </form>`;
-//   renderToDom('#repoForm', domstring);
-// };
+const rForm = () => {
+  let domstring =
+  `<div class="card form-card">
+    <form>
+      <div class="mb-3">
+        <h5 class="card-title">Pin a new repository</h5>
+        <label for="repoNameInput" class="form-label">Repository name *</label>
+        <input type="Name" class="form-control" id="repoNameInput" aria-describedby="">
+        <p id="repoNameHelp" class="form-text">Great repository names are short and memorable!</p>
+      </div>
+      <div class="mb-3">
+        <label for="repoDiscription" class="form-label">Description (optional)</label>
+        <input type="text" class="form-control" id="repoDescriptionInput">
+      </div>
+      <button type="button" class="btn btn-success">Create repository</button>
+    </form>
+  </div>`;
+  renderToDom('#repoForm', domstring);
+};
 
-// rForm();
+rForm();
