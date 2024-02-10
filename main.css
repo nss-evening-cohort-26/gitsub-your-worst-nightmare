@@ -30,16 +30,7 @@ body {
 }
 /* PROFILE SECTION */
 
-/* FOOTER SECTION */
-#footerBtns {
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 1%;
-  left: 10%;
-  gap: 25px;
-  background-color: black;
-}
+
 /* This is the styling for the nav bar*/
 #overview-n {
   color: rgb(246, 243, 243);
@@ -67,7 +58,18 @@ body {
   left: 663px;
   gap: 80px;
 }
+/* nav bar */
 
+/* FOOTER SECTION */
+#footerBtns {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: -35%;
+  left: 12%;
+  gap: 46px;
+  background-color: black;
+}
 .btn-primary {
   background-color: black;
   color: #037ffc;
