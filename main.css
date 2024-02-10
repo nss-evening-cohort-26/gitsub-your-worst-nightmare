@@ -34,7 +34,7 @@ body {
 #footerBtns {
   display: flex;
   align-items: flex-end;
-  position: absolute;
+  /* position: absolute; */
   bottom: 1%;
   left: 10%;
   gap: 25px;
@@ -76,7 +76,7 @@ body {
 }
 
 #copyrightText {
-  position: absolute;
+  /* position: absolute; */
   bottom: -30%;
   left: -9%;
   color: white;
@@ -85,7 +85,7 @@ body {
 }
 
 #github {
-  position: absolute;
+  /* position: absolute; */
   bottom: 17.5%;
   left: 44%;
   color: white;
@@ -93,3 +93,16 @@ body {
   opacity: .5;
 }
 /* FOOTER SECTION */
+
+/* projects page */
+#projectList {
+  width: 1251px;
+  height: 483px;
+  top: 129px;
+  left: 663px;
+  color: white;
+  position: absolute;
+  top: 14%;
+  left: 37%;
+  border: red solid 1px;
+}
