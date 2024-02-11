@@ -16,6 +16,10 @@ body {
   color: #e6edf3;
 }
 
+.profile-card {
+  margin-top: 20px;
+}
+
 #btn-profile {
   color: #e6edf3;
   background-color: #21272c;
@@ -88,9 +92,10 @@ a {
 
 #pinned-repos {
   width: 1251px;
-  height: 626px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .repo-cards {
@@ -109,14 +114,14 @@ a {
   color: #e6edf3;
 }
 
-#repoNameInput {
+#name, #language {
   color: #e6edf3;
   background-color: #090d12;
   width: 500px;
 }
 
-#repoDescriptionInput {
+#description {
   color: #e6edf3;
   background-color: #090d12;
-  height: 350px;
+  padding: 10px 0 250px 10px;
 }

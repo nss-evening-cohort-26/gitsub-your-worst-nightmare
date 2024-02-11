@@ -85,7 +85,24 @@
         </ul>
   
         <div id="pinned-repos"></div>
-        <div id="repoForm"></div>
+
+        <div class="card form-card">
+          <form>
+            <div class="mb-3">
+              <h5 class="card-title">Pin a new repository</h5>
+              <label class="form-label">Repository name</label>
+              <input type="text" class="form-control" id="name">
+              <p class="form-text">Great repository names are short and memorable!</p>
+              <label class="form-label">Language</label>
+              <input type="text" class="form-control" id="language">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Description</label>
+              <input type="text" class="form-control" id="description">
+            </div>
+            <button type="submit" class="btn btn-success">Pin repository</button>
+          </form>
+        </div>
 
       </div>
 

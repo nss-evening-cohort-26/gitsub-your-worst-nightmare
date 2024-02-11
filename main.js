@@ -62,9 +62,9 @@ const pinnedReposOnDom = (pinnedRepos) => {
       <div class="card-body">
         <h5 class="card-title">${repo.name}</h5>
         <p class="card-text">${repo.description}</p>
-        <a href="#" class="card-link">${repo.language}</a>
-        <a href="#" class="card-link">${repo.stars}</a>
-        <a href="#" class="card-link">${repo.forks}</a>
+        <a href="#" class="card-link">🟡 ${repo.language}</a>
+        <a href="#" class="card-link"><i class="fa-regular fa-star"></i> ${repo.stars}</a>
+        <a href="#" class="card-link"><i class="fa-solid fa-code-fork"></i> ${repo.forks}</a>
       </div>
     </div>`;
     renderToDom("#pinned-repos", domstring);
@@ -73,24 +73,23 @@ const pinnedReposOnDom = (pinnedRepos) => {
 
 pinnedReposOnDom(pinnedRepos);
 
-const rForm = () => {
-  let domstring =
-  `<div class="card form-card">
-    <form>
-      <div class="mb-3">
-        <h5 class="card-title">Pin a new repository</h5>
-        <label for="repoNameInput" class="form-label">Repository name *</label>
-        <input type="Name" class="form-control" id="repoNameInput" aria-describedby="">
-        <p id="repoNameHelp" class="form-text">Great repository names are short and memorable!</p>
-      </div>
-      <div class="mb-3">
-        <label for="repoDiscription" class="form-label">Description (optional)</label>
-        <input type="text" class="form-control" id="repoDescriptionInput">
-      </div>
-      <button type="button" class="btn btn-success">Create repository</button>
-    </form>
-  </div>`;
-  renderToDom('#repoForm', domstring);
-};
+const form = document.querySelector("form");
 
-rForm();
+const createRepo = (e) => {
+  e.preventDefault();
+
+  const newRepo = {
+    id: pinnedRepos.length + 1,
+    name: document.querySelector("#name").value,
+    description: document.querySelector("#description").value,
+    language: document.querySelector("#language").value,
+    stars: 4,
+    forks: 20
+  }
+
+  pinnedRepos.push(newRepo);
+  pinnedReposOnDom(pinnedRepos);
+  form.reset();
+}
+
+form.addEventListener("submit", createRepo);
