@@ -95,11 +95,9 @@ body {
 /* FOOTER SECTION */
 
 /* projects page */
-#projectList {
+#projectPage {
   width: 1251px;
   height: 483px;
-  top: 129px;
-  left: 663px;
   color: white;
   position: absolute;
   top: 14%;

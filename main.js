@@ -36,7 +36,8 @@ const renderToDom = (divId, htmlToRender) => {
 // for Projects Page //
 
 const switchProjectPage = document.querySelector("#projects-n")
-// switchProjectPage.addEventListener("click", projectsListOnDom)
+
+
 
 const projectsListOnDom = (projects) => {
   let domString = "";
@@ -49,6 +50,7 @@ const projectsListOnDom = (projects) => {
     </div>
   </div>`;
   });
+  // renderToDom("#projectsPage", domString)
 };
 projectsListOnDom(projects);
 
