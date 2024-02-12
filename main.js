@@ -58,8 +58,34 @@ const projectsListOnDom = (projects) => {
 projectsListOnDom(projects);
 
 // // project form
+const projectFormTemplate = () => {
+  console.log("kittens")
+  let domString = 
+  `<div class="mb-3">
+    <label for="projectNameForm" class="form-label">Project Name</label>
+    <input type="email" class="form-control" id="projectNameForm">
+  </div>
+  <div class="mb-3">
+    <label for="formDescription" class="form-label">Enter project description here</label>
+    <textarea class="form-control" id="formDescription" rows="3"></textarea>
+  </div>`
+  renderToDom("#projectForm", domString);
+};
+projectFormTemplate()
 
+// const projectForm = (e) => {
+//   e.preventDefault();
 
+//   const projectForm = {
+//     id: projects.length + 1,
+//     projectName: document.querySelector("projectNameForm").value,
+//     projectDescription: document.querySelector("formDescription").value,
+//   };
+
+//   projects.push(projectForm);
+//   projectsListOnDom(projects);
+//   form.reset();
+// };
 // switchProjectPage.addEventListener("click", (e) => {
 //   console.log("clicked")
 //   if (e.target.id === "projects-n") {
