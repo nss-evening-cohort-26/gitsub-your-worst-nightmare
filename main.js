@@ -7,22 +7,26 @@ const projects = [
   {
     id: 2,
     projectName: "Weather App",
-    projectDescription: "A Python project utilizing API calls to provide real-time weather information, featuring a user-friendly command-line interface for easy access to current weather conditions and forecasts.",
+    projectDescription:
+      "A Python project utilizing API calls to provide real-time weather information, featuring a user-friendly command-line interface for easy access to current weather conditions and forecasts.",
   },
   {
     id: 3,
     projectName: "To Do List",
-    projectDescription: "A web-based task management application built with React and Node.js, allowing users to create, update, and delete tasks while providing a clean and responsive user interface.",
+    projectDescription:
+      "A web-based task management application built with React and Node.js, allowing users to create, update, and delete tasks while providing a clean and responsive user interface.",
   },
   {
     id: 4,
     projectName: "Image Classifier",
-    projectDescription: "A machine learning project using TensorFlow and Python to develop an image classification model, capable of accurately identifying objects within images based on a pre-trained neural network.",
+    projectDescription:
+      "A machine learning project using TensorFlow and Python to develop an image classification model, capable of accurately identifying objects within images based on a pre-trained neural network.",
   },
   {
     id: 5,
     projectName: "Expense Tracker",
-    projectDescription: "A mobile app developed with Flutter and Firebase, designed to help users track their expenses, set budgets, and visualize spending patterns through interactive charts and graphs.",
+    projectDescription:
+      "A mobile app developed with Flutter and Firebase, designed to help users track their expenses, set budgets, and visualize spending patterns through interactive charts and graphs.",
   },
 ];
 
@@ -35,10 +39,9 @@ const renderToDom = (divId, htmlToRender) => {
 // TODO: ts renderToDom to inject projectPage
 // for Projects Page //
 
-const switchProjectPage = document.querySelector("#projects-n")
+const switchProjectPage = document.querySelector("#projects-n");
 
-
-
+// this is for the project list
 const projectsListOnDom = (projects) => {
   let domString = "";
   projects.map((project) => {
@@ -50,12 +53,16 @@ const projectsListOnDom = (projects) => {
     </div>
   </div>`;
   });
-  // renderToDom("#projectsPage", domString)
+  renderToDom("#projectsPage", domString)
 };
 projectsListOnDom(projects);
 
-switchProjectPage.addEventListener("click", (e) => {
-  if (e.target.id === "projects-n") {
-    renderToDom("#projectsPage", domString)
-  }
-});
+// // project form
+
+
+// switchProjectPage.addEventListener("click", (e) => {
+//   console.log("clicked")
+//   if (e.target.id === "projects-n") {
+//     renderToDom("#projectsPage", domString);
+//   }
+// });

@@ -95,7 +95,7 @@ body {
 /* FOOTER SECTION */
 
 /* projects page */
-#projectPage {
+#projectsPage {
   width: 1251px;
   height: 483px;
   color: white;
@@ -103,4 +103,8 @@ body {
   top: 14%;
   left: 37%;
   border: red solid 1px;
+}
+
+#projectForm {
+  background-color: aqua;
 }
