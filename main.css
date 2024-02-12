@@ -96,15 +96,18 @@ body {
 
 /* projects page */
 #projectsPage {
-  width: 1251px;
+  width: 1000px;
   height: 483px;
   color: white;
   position: absolute;
   top: 14%;
   left: 37%;
-  border: red solid 1px;
 }
 
 #projectForm {
-  background-color: aqua;
+  color:#e6edf3;
+  background-color: #090d12;
+  height: 260px;
+  padding: 10px 10px 250px 10px;
+  border: solid lightgrey 1px;
 }
