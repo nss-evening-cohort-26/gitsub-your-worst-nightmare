@@ -93,7 +93,8 @@ a {
 
 .form-card {
   height: 664px;
-  width: 100%;
+  width: 95%;
+  padding: 20px;
 }
 
 .form-text {
