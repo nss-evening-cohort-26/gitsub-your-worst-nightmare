@@ -3,21 +3,24 @@ body {
   background-color: #010409;
 }
 
-/* PROFILE SECTION */
 .card {
-  width: 445px;
-  height: 1468px;
   color: #e6edf3;
   background-color: #0d1117;
+  padding: 10px;
+}
+
+.profile-card {
+  margin-top: 20px;
+  width: 25%;
+  height: 1468px;
   border: none;
-  padding: 20px;
 }
 
 .card-link {
   color: #e6edf3;
 }
 
-.btn-profile {
+#btn-profile {
   color: #e6edf3;
   background-color: #21272c;
   border: none;
@@ -28,70 +31,84 @@ body {
   background-color: #0d1117;
   border: none;
 }
-/* PROFILE SECTION */
 
+#footerBtns {
+  height: 96px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-/* This is the styling for the nav bar*/
-#overview-n {
-  color: rgb(246, 243, 243);
-  font-size: 25px;
+#copyrightText, #github {
+  color: #78818a;
 }
-#repositories-n {
-  color: lightgray;
-  font-size: 25px;
+
+a {
+  text-decoration: none;
 }
-#projects-n {
-  color: lightgray;
-  font-size: 25px;
+
+#overview-n, #repositories-n, #projects-n, #packages-n {
+  color: #e6edf3;
+  font-size: 20px;
 }
-#packages-n {
-  color: lightgray;
-  font-size: 25px;
-}
+
 .nav.nav-underline {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1226px;
+  width: 100%;
   height: 96px;
   top: 10px;
   left: 663px;
   gap: 80px;
 }
-/* nav bar */
 
-/* FOOTER SECTION */
-#footerBtns {
+#wrapper {
   display: flex;
-  align-items: flex-end;
-  position: absolute;
-  bottom: -35%;
-  left: 12%;
-  gap: 46px;
-  background-color: black;
-}
-.btn-primary {
-  background-color: black;
-  color: #037ffc;
-  border: none;
-  font-size: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-#copyrightText {
-  position: absolute;
-  bottom: -30%;
-  left: -9%;
-  color: white;
-  font-size: 8px;
-  opacity: .5;
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 
-#github {
-  position: absolute;
-  bottom: 17.5%;
-  left: 44%;
-  color: white;
-  font-size: 15px;
-  opacity: .5;
+#pinned-repos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-/* FOOTER SECTION */
+
+.repo-cards {
+  height: 190px;
+  width: 48%;
+  margin: 5px;
+  border: 1px solid #e6edf3;
+}
+
+.form-card {
+  height: 664px;
+  width: 95%;
+  padding: 20px;
+}
+
+.form-text {
+  color: #e6edf3;
+}
+
+#name, #language {
+  color: #e6edf3;
+  background-color: #090d12;
+  width: 500px;
+}
+
+#description {
+  color: #e6edf3;
+  background-color: #090d12;
+  padding: 10px 0 250px 10px;
+}
