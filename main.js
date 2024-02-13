@@ -49,54 +49,93 @@ const pinnedRepos = [
   }
 ]
 
+const packages = [
+  {
+    id: 1,
+    name: "Docker",
+    description: "A software platform used for building applications based on containers — small and lightweight execution environments."
+  },
+  {
+    id: 2,
+    name: "Apache Maven",
+    description: "A default package manager used for the Java programming language and the Java runtime environment."
+  },
+  {
+    id: 3,
+    name: "NuGet",
+    description: "A free and open source package manager used for the Microsoft development platforms including .NET."
+  },
+  {
+    id: 4,
+    name: "RubyGems",
+    description: "A standard format for distributing Ruby programs and libraries used for the Ruby programming language."
+  },
+  {
+    id: 5,
+    name: "npm",
+    description: "A package manager for JavaScript, included with Node.js. npm makes it easy for developers to share and reuse code."
+  },
+  {
+    id: 6,
+    name: "Containers",
+    description: "A single place for your team to manage Docker images and decide who can see and access your images."
+  }
+]
+
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
 
-const pinnedReposOnDom = (pinnedRepos) => {
-  let domstring = ``;
-  pinnedRepos.forEach(repo => {
-    domstring +=
-    `<div class="card repo-cards">
-      <div class="card-body">
-        <h5 class="card-title">${repo.name}</h5>
-        <p class="card-text">${repo.description}</p>
-        <a href="#" class="card-link">🟡 ${repo.language}</a>
-        <a href="#" class="card-link"><i class="fa-regular fa-star"></i> ${repo.stars}</a>
-        <a href="#" class="card-link"><i class="fa-solid fa-code-fork"></i> ${repo.forks}</a>
-      </div>
-    </div>`;
-    renderToDom("#pinned-repos", domstring);
-  })
-};
+const currentPage = window.location.pathname;
 
-pinnedReposOnDom(pinnedRepos);
+// OVERVIEW //////////////////////////////////////
 
-const form = document.querySelector("form");
+if (currentPage === "repositories.html") {
 
-const createRepo = (e) => {
-  e.preventDefault();
-
-  const newRepo = {
-    id: pinnedRepos.length + 1,
-    name: document.querySelector("#name").value,
-    description: document.querySelector("#description").value,
-    language: document.querySelector("#language").value,
-    stars: 4,
-    forks: 20
-  }
-
-  pinnedRepos.push(newRepo);
+  const pinnedReposOnDom = (pinnedRepos) => {
+    let domstring = ``;
+    pinnedRepos.forEach(repo => {
+      domstring +=
+      `<div class="card repo-cards">
+        <div class="card-body">
+          <h5 class="card-title">${repo.name}</h5>
+          <p class="card-text">${repo.description}</p>
+          <a href="#" class="card-link">🟡 ${repo.language}</a>
+          <a href="#" class="card-link"><i class="fa-regular fa-star"></i> ${repo.stars}</a>
+          <a href="#" class="card-link"><i class="fa-solid fa-code-fork"></i> ${repo.forks}</a>
+        </div>
+      </div>`;
+      renderToDom("#pinned-repos", domstring);
+    })
+  };
+  
   pinnedReposOnDom(pinnedRepos);
-  form.reset();
+  
+  const reposForm = document.querySelector("form");
+  
+  const createRepo = (e) => {
+    e.preventDefault();
+  
+    const newRepo = {
+      id: pinnedRepos.length + 1,
+      name: document.querySelector("#name").value,
+      description: document.querySelector("#description").value,
+      language: document.querySelector("#language").value,
+      stars: 4,
+      forks: 20
+    }
+  
+    pinnedRepos.push(newRepo);
+    pinnedReposOnDom(pinnedRepos);
+    reposForm.reset();
+  }
+  
+  reposForm.addEventListener("submit", createRepo);
 }
 
-form.addEventListener("submit", createRepo);
 
-
-
-
+/////REPO//////
 
 const findRepos = [
   {
@@ -149,6 +188,7 @@ const findRepos = [
   }
 ]
 
+if (currentPage === "repositories.html") {
 
 const findReposOnDom = (findRepos) => {
   let domstring = ``;
@@ -174,7 +214,7 @@ const formR = document.querySelector("form");
 const createRepo1 = (e) => {
   e.preventDefault();
 
-  const newRepo = {
+  const newRepo1 = {
     id: findRepos.length + 1,
     name: document.querySelector("#name").value,
     description: document.querySelector("#description").value,
@@ -184,7 +224,52 @@ const createRepo1 = (e) => {
 
   findRepos.push(newRepo1);
   findReposOnDom(findRepos);
-  form.reset();
+  formR.reset();
 }
 
 formR.addEventListener("submit", createRepo1);
+}
+//REPO//////
+
+// OVERVIEW //////////////////////////////////////
+// PACKAGES //////////////////////////////////////
+
+if (currentPage === "/packages.html") {
+
+  const packagesOnDom = (packages) => {
+    let domstring = ``;
+    packages.forEach(package => {
+      domstring +=
+      `<div class="card package-cards">
+        <div class="card-body">
+          <h5 class="card-title">${package.name}</h5>
+          <p class="card-text">${package.description}</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>`;
+      renderToDom("#packages", domstring);
+    })
+  };
+  
+  packagesOnDom(packages);
+  
+  const packagesForm = document.querySelector("form");
+  
+  const createPackage = (e) => {
+    e.preventDefault();
+  
+    const newPackage = {
+      id: packages.length + 1,
+      name: document.querySelector("#name").value,
+      description: document.querySelector("#description").value,
+    }
+  
+    packages.push(newPackage);
+    packagesOnDom(packages);
+    packagesForm.reset();
+  }
+  
+  packagesForm.addEventListener("submit", createPackage);
+}
+
+// PACKAGES //////////////////////////////////////
