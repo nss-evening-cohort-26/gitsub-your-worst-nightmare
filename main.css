@@ -76,6 +76,42 @@ a {
   justify-content: space-around;
 }
 
+#copyrightText {
+  /* position: absolute; */
+  bottom: -30%;
+  left: -9%;
+  color: white;
+  font-size: 8px;
+  opacity: .5;
+}
+
+#github {
+  /* position: absolute; */
+  bottom: 17.5%;
+  left: 44%;
+  color: white;
+  font-size: 15px;
+  opacity: .5;
+}
+/* FOOTER SECTION */
+
+/* projects page */
+#projectsPage {
+  width: 1000px;
+  height: 483px;
+  color: white;
+  position: absolute;
+  top: 14%;
+  left: 37%;
+}
+
+#projectForm {
+  color:#e6edf3;
+  background-color: #090d12;
+  height: 260px;
+  padding: 10px 10px 250px 10px;
+  border: solid lightgrey 1px;
+}
 #container {
   display: flex;
   flex-direction: column;
