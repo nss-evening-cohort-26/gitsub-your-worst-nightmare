@@ -119,25 +119,26 @@ const renderToDom = (divId, htmlToRender) => {
   selectedDiv.innerHTML = htmlToRender;
 };
 
+const currentPage = window.location.pathname;
 // for Projects Page //
-const switchProjectPage = document.querySelector("#projects-n");
 
-// this is for the project list
-const projectsListOnDom = (projects) => {
-  let domString = "";
-  projects.map((project) => {
-    domString += `<div class="container text-center">
-    <div class="row row-cols-sm-3 row-cols-sm-3 row-cols-sm-3">
-      <div class="col">${project.projectName}</div>
-      <div class="col">${project.projectDescription}</div>
-      <div class="col">...</div>
-    </div>
-  </div>`;
-  });
-  renderToDom("#projectsPage", domString)
-};
-projectsListOnDom(projects);
+if (currentPage === "/projects.html") {
 
+  const projectsListOnDom = (projects) => {
+    let domString = "";
+    projects.map((project) => {
+      domString += `<div class="container text-center">
+      <div class="row row-cols-sm-3 row-cols-sm-3 row-cols-sm-3">
+        <div class="col">${project.projectName}</div>
+        <div class="col">${project.projectDescription}</div>
+        <div class="col">...</div>
+      </div>
+    </div>`;
+    });
+    renderToDom("#projectsPage", domString)
+  };
+  projectsListOnDom(projects);
+}
 
 const newProjectForm = document.querySelector("#projectFormSubmit");
 
@@ -158,15 +159,6 @@ const createProject = (e) => {
 newProjectForm.addEventListener("submit", createProject);
 
 
-
-// switchProjectPage.addEventListener("click", (e) => {
-//   console.log("clicked")
-//   if (e.target.id === "projects-n") {
-//     renderToDom("#projectsPage", domString);
-//   }
-// });
-
-const currentPage = window.location.pathname;
 
 // OVERVIEW //////////////////////////////////////
 
