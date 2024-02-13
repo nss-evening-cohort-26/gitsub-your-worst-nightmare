@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitSub | Packages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <div class="card profile-card">
+        <img src="images/monica.png" class="card-img-top" alt="Monica smiling">
+        <div class="card-body">
+          <h5 class="card-title">Monica Powell</h5>
+          <span class="card-text">M0nica</span>
+          <p class="card-text">Building tech to elevate people. Founder of React Ladies a community for React JS developers.</p>
+        </div>
+        <div class="card-body">
+          <a href="#" id="btn-profile" class="btn btn-primary">Follow</a>
+          <a href="#" id="btn-profile" class="btn btn-primary"><i class="fa-regular fa-heart"></i> Sponsor</a>
+          <a href="#" id="btn-profile" class="btn btn-primary">...</a>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link"><i class="fa-solid fa-user-group"></i> 1.8k followers</a>
+          <a href="#" class="card-link">27 following</a>
+          <a href="#" class="card-link"><i class="fa-regular fa-star"></i> 329</a>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> New York, New York</li>
+          <li class="list-group-item"><i class="fa-solid fa-envelope"></i> gitsub@aboutmonica.com</li>
+          <li class="list-group-item"><i class="fa-solid fa-link"></i> https://www.aboutmonica.com</li>
+          <li class="list-group-item"><i class="fa-brands fa-twitter"></i> @indigitalcolor</li>
+        </ul>
+        <div class="card-body">
+          <h6 class="card-title">Highlights</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fa-solid fa-sun"></i> Arctic Code Vault Contributor</li>
+            <li class="list-group-item"><i class="fa-solid fa-star"></i> GitSub Star</li>
+            <li class="list-group-item"><i class="fa-regular fa-star"></i> PRO</li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">Organizations</h6>
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+        </div>
+        <div class="card-body">
+          <h6 class="card-title">Sponsors</h6>
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+          <img src="..." class="img-thumbnail" alt="...">
+        </div>
+      </div>
+
+      <div id="container">
+
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" id="overview-n" aria-current="page" href="index.html"> <i class="fa-solid fa-book-open"></i> Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="repositories-n" href="repositories.html"><i class="fa-solid fa-book-bookmark"></i> Repositories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="projects-n" href="projects.html"><i class="fa-solid fa-square-poll-vertical"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="packages-n" href="packages.html"><i class="fa-solid fa-cube"></i> Packages</a>
+          </li>
+        </ul>
+  
+        <div id="packages"></div>
+
+        <div class="card form-card">
+          <form>
+            <div class="mb-3">
+              <h5 class="card-title">Create a new package</h5>
+              <label class="form-label">Package name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Description</label>
+              <input type="text" class="form-control" id="description">
+            </div>
+            <button type="submit" class="btn btn-success">Create package</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div id="footerBtns">
+        <a href="#" id="copyrightText"><i class="fa-regular fa-copyright"></i>2024 GitSub</a>
+        <a href="#" id="terms">Terms</a>
+        <a href="#" id="privacy">Privacy</a>
+        <a href="#" id="security">Security</a>
+        <a href="#" id="status">Status</a>
+        <a href="#" id="help">Help</a>
+        <a href="#" id="github"><i class="fa-brands fa-github"></i></a>
+        <a href="#" id="contactGithub">Contact GitSub</a>
+        <a href="#" id="pricing">Pricing</a>
+        <a href="#" id="API">API</a>
+        <a href="#" id="training">Training</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="about">About</a>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a5bdea82f4.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
